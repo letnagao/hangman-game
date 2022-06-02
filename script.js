@@ -54,3 +54,53 @@ const displayOptions = () => {
     }
     optionsContainer.appendChild(buttonCon);
 };
+
+const blocker = () => {
+    let optionsButtons = document.querySelectorAll(".options");
+    let letterButtons = document.querySelectorAll(".letters");
+
+    optionsButtons.forEach(button => {
+        button.disable = true;
+    });
+
+    letterButtons.forEach(button => {
+        button.disable.true;
+    });
+    newGameContainer.classList.remove("hide");
+};
+
+const generateWord = (optionValue) => {
+    let optionsButtons = document.querySelectorAll(".options");
+    optionsButtons.forEach((button) => {
+        if(button.innerText.toLowerCase() ===
+        optionValue) {
+            button.classList.add("active");
+        }
+        button.disable = true;
+    }); 
+
+    letterContainer.classList.remove("hide");
+    userInputSection.innerText = "";
+
+    let optionArray = options[optionValue];
+
+    
+};
+
+const initializer = () => {
+    winCount = 0;
+    count = 0;
+
+    for(let i =65; i<91; i++) {
+        let button = document.createElement("button");
+        button.classList.add("letters");
+
+        button.innerText = String.fromCharCode(i);
+        letterContainer.append(button);
+    }
+    displayOptions();
+};
+
+newGameButton.addEventListener("click",
+initializer);
+window.onload = initializer;
