@@ -20,7 +20,8 @@ Javascript Project
   
 </ul><h2> Preview 🔥</h2>
 <p align="center">
-  <video src="" />
+  <img src="https://user-images.githubusercontent.com/99754900/212073844-6daf38fb-1151-4fcc-a590-283cdfdeab6e.jpg"
+ />
 </p>
 
 
